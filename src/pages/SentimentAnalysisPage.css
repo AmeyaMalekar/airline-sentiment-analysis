@@ -1,0 +1,58 @@
+.sentiment-analysis-page {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 300px;
+  border-right: 1px solid #ccc;
+  padding-right: 20px;
+}
+
+.tweets, .sentiment-result, .fuzzy-search {
+  flex: 1;
+}
+
+.tweet-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tweet-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+.analyze-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.analyze-button:hover {
+  background-color: #0056b3;
+}
+
+.fuzzy-suggestions {
+  list-style-type: none;
+  padding: 0;
+}
