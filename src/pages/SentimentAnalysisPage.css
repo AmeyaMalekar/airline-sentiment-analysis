@@ -1,27 +1,67 @@
+/* Base Theme Colors */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #f8f9fa;
+  --accent-color: #ffcc00;
+  --text-color: #333;
+  --background-color: #ffffff;
+  --hover-color: #0056b3;
+}
+
+/* General Page Styling */
 .sentiment-analysis-page {
   font-family: Arial, sans-serif;
   margin: 0 auto;
   padding: 20px;
   max-width: 1200px;
-  color: #333;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
+/* Header Styling */
 header {
   text-align: center;
   margin-bottom: 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
 }
 
+/* Content Layout */
 .content {
   display: flex;
   gap: 20px;
 }
 
+/* Sidebar Styling */
 .sidebar {
   width: 300px;
   border-right: 1px solid #ccc;
   padding-right: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
 }
 
+.filter-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+select, input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Tweets Section */
 .tweets, .sentiment-result, .fuzzy-search {
   flex: 1;
 }
@@ -36,11 +76,11 @@ header {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
-  background: #f9f9f9;
+  background: var(--secondary-color);
 }
 
 .analyze-button {
-  background-color: #007bff;
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -49,10 +89,22 @@ header {
 }
 
 .analyze-button:hover {
-  background-color: #0056b3;
+  background-color: var(--hover-color);
 }
 
+/* Fuzzy Search Suggestions */
 .fuzzy-suggestions {
   list-style-type: none;
   padding: 0;
+  background: var(--secondary-color);
+  border-radius: 5px;
+}
+
+.fuzzy-suggestions li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.fuzzy-suggestions li:last-child {
+  border-bottom: none;
 }
