@@ -66,7 +66,7 @@ const SentimentAnalysisPage = () => {
   return (
     <div className="sentiment-analysis-page">
       <header>
-        <h1>Sentiment Analysis Page</h1>
+        <h1>Sentiment Analysis</h1>
       </header>
 
       <main className="content">
