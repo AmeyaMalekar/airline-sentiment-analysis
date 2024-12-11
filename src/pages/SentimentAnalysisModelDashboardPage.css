@@ -1,0 +1,110 @@
+/* Base Theme Colors */
+.sentiment-analysis-model-dash {
+  --primary-color: #FFA500;
+  --secondary-color: #f8f9fa;
+  --accent-color: #ffcc00;
+  --text-color: #333;
+  --background-color: #ffffff;
+  --hover-color: #0056b3;
+
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Header Styling */
+.sentiment-analysis-model-dash header {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Content Layout */
+.content {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  gap: 40px;              /* Space between sections */
+}
+
+/* Individual chart section styling */
+.chart-section {
+  padding: 20px;
+  background-color: var(--secondary-color); /* Light background for each section */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Chart images inside the chart section */
+.chart-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styling inside each chart section */
+.chart-section p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;    /* Slightly increase font size for readability */
+  line-height: 1.5;     /* Improve line spacing */
+  color: var(--text-color);
+}
+
+/* Level 4 Layout (two charts per row) */
+.two-charts {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.chart-container {
+  width: 45%;            /* Each chart takes up 45% of the row width */
+  text-align: center;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.chart-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Remove flex-wrap for Level 4, force all charts to stay on a single line */
+.level-4 .two-charts {
+  flex-wrap: nowrap; /* Ensure charts stay on one row */
+}
+
+/* Responsive styling for smaller screens (mobile-first design) */
+@media (max-width: 768px) {
+  /* Stack charts vertically on smaller screens */
+  .two-charts {
+    flex-direction: column;
+    align-items: center;  /* Center the charts when stacked */
+  }
+
+  .chart-container {
+    width: 100%;          /* Make each chart take full width */
+  }
+
+  /* For Level 4 (two charts) on smaller screens, stack them vertically */
+  .level-4 .two-charts {
+    flex-direction: column;
+    align-items: center;  /* Center the charts on mobile */
+  }
+
+  .level-4 .chart-container {
+    width: 100%;          /* Each chart takes full width on small screens */
+  }
+}
