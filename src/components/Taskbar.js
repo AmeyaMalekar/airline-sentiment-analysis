@@ -10,8 +10,8 @@ function Taskbar() {
         AirlineTweetML
       </Link>
       <nav style={styles.navLinks}>
-        <Link to="/dataset" style={styles.navLink}>
-          Dataset
+        <Link to="/sentiment-analysis-model-dash" style={styles.navLink}>
+          Sentiment Analysis Model Dashboard
         </Link>
         <Link to="/sentiment-analysis" style={styles.navLink}>
           Sentiment Analysis

@@ -18,9 +18,9 @@ function HomePage() {
       {/* Icons Section */}
       <div style={styles.iconsContainer}>
         <div style={styles.icon}>
-          <a href="/dataset" style={styles.iconLink}>
+          <a href="/sentiment-analysis-model-dash" style={styles.iconLink}>
             <img src={graphIcon} alt="Dataset" style={styles.iconImage} />
-            <p style={styles.iconText}>Dataset</p>
+            <p style={styles.iconText}>Sentiment Analysis Model Dashboard</p>
           </a>
         </div>
         <div style={styles.icon}>
