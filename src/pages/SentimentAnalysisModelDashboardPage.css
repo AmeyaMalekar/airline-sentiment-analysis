@@ -26,14 +26,14 @@
 }
 
 /* Content Layout */
-.content {
+.sentiment-analysis-model-dash .content {
   display: flex;
   flex-direction: column; /* Stack sections vertically */
   gap: 40px;              /* Space between sections */
 }
 
 /* Individual chart section styling */
-.chart-section {
+.sentiment-analysis-model-dash .chart-section {
   padding: 20px;
   background-color: var(--secondary-color); /* Light background for each section */
   border-radius: 8px;
@@ -42,7 +42,7 @@
 }
 
 /* Chart images inside the chart section */
-.chart-image {
+.sentiment-analysis-model-dash .chart-image {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
@@ -50,7 +50,7 @@
 }
 
 /* Paragraph styling inside each chart section */
-.chart-section p {
+.sentiment-analysis-model-dash .chart-section p {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 1.1rem;    /* Slightly increase font size for readability */
@@ -59,14 +59,14 @@
 }
 
 /* Level 4 Layout (two charts per row) */
-.two-charts {
+.sentiment-analysis-model-dash .two-charts {
   display: flex;
   gap: 20px;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.chart-container {
+.sentiment-analysis-model-dash .chart-container {
   width: 45%;            /* Each chart takes up 45% of the row width */
   text-align: center;
   background-color: var(--background-color);
@@ -75,14 +75,14 @@
   padding: 10px;
 }
 
-.chart-container img {
+.sentiment-analysis-model-dash .chart-container img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
 /* Remove flex-wrap for Level 4, force all charts to stay on a single line */
-.level-4 .two-charts {
+.sentiment-analysis-model-dash .level-4 .two-charts {
   flex-wrap: nowrap; /* Ensure charts stay on one row */
 }
 
