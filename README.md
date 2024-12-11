@@ -2,6 +2,9 @@
 
 Perform sentiment analysis on Twitter tweets related to airline customers' experiences to inform travelers about airline perfomance.
 
+## Project Demo Walkthrough Video
+https://mediaspace.illinois.edu/media/t/1_b4gbvvnm
+
 ## Software Usage Details
 1. Clone the github repository  
 ```git clone https://github.com/AmeyaMalekar/airline-sentiment-analysis.git```  
